@@ -1,5 +1,6 @@
 {
   "name": "cursoIonic2App02",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {}
 }
