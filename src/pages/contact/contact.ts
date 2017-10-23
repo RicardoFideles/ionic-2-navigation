@@ -2,13 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 
-/**
- * Generated class for the ContactPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-contact',
@@ -17,11 +10,19 @@ import { HomePage } from '../home/home';
 export class ContactPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactPage');
+    console.log(this.navParams);
+    console.log(this.navParams.get('type'));
+    this.navParams.data.message();
+    this.navParams.data['message']();
+
+    console.log(this.navParams.data.year);
+
   }
+
 
   pushPage():void{
     this.navCtrl.push(ContactPage)
